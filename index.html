@@ -199,18 +199,20 @@
 </section>
 
 <script>
-  const imageNames = [
+  const foggy = [
     "0069", "0070", "0071", "0072",
-    "0224", "0229", "0235",
-    "0295", "0298", "0300", "0301", "0302", "0304", "0308",
-    "0438", "0439", "0451", "0651",
+    "0224", "0229", "0235", "0308","0651"
+  ];
+  const light_pollution = [
+    "0295", "0298", "0300", "0301", "0302", "0304", "0438",
+    "0439", "0451",
     "1579", "4045", "4644"
   ];
 
   const gallery = document.getElementById('foggy-gallery');
   const light = document.getElementById('light-gallery');
 
-  imageNames.forEach(name => {
+  foggy.forEach(name => {
     const wrapper = document.createElement('div');
     wrapper.style = "flex: 0 0 auto; width: 150px;";
     wrapper.innerHTML = `
@@ -219,7 +221,7 @@
     `;
     gallery.appendChild(wrapper);
   });
-  imageNames.forEach(name => {
+  light_pollution.forEach(name => {
     const wrapper = document.createElement('div');
     wrapper.style = "flex: 0 0 auto; width: 150px;";
     wrapper.innerHTML = `
