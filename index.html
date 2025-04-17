@@ -204,9 +204,9 @@
     "0224", "0229", "0235", "0308","0651"
   ];
   const light_pollution = [
-    "0295", "0298", "0300", "0301", "0302", "0304", "0438",
-    "0439", "0451",
-    "1579", "4045", "4644"
+    "0028", "0256", "0295", "0298", "0304", "0355", "0384",
+    "1579", "0300",
+    "0302", "0438", "0439","0451"
   ];
 
   const gallery = document.getElementById('foggy-gallery');
@@ -225,7 +225,7 @@
     const wrapper = document.createElement('div');
     wrapper.style = "flex: 0 0 auto; width: 150px;";
     wrapper.innerHTML = `
-      <img src="static/images/foggy/${name}.jpg" alt="${name}"
+      <img src="static/images/light/${name}.jpg" alt="${name}"
            style="width: 150px; height: 100px; object-fit: cover; border-radius: 8px;">
     `;
     light.appendChild(wrapper);
